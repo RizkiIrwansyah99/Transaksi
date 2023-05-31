@@ -5,7 +5,7 @@
         <h2>Daftar Barang</h2>
     </div>
     <div class="pb-3"> 
-        <a href='{{route('tambah.barang')}}' class="btn btn-primary">+ Tambah Data</a>
+        <a href='{{route('tambah.barang')}}' class="btn btn-primary"><i class="bi bi-plus-circle"></i> Data Barang</a>
     </div>
     @if(session('success'))
         <div class="alert alert-success">
@@ -46,12 +46,12 @@
                 <td class="text-center">
                     <a href="{{ route('detail.barang', ['id'=>$item->id]) }}" type="button" class="btn btn-info btn-sm">Detail</a>
                     <a href="{{ route('edit.barang', ['id' => $item->id]) }}" type="button" class="btn btn-warning 
-                        btn-sm">Edit</a>
+                        btn-sm"><i class="bi bi-pencil-square"></i> Edit</a>
                     <form onsubmit="return confirm('Yakin akan menghapus data?')" class="d-inline" action="{{ 
                         route('delete.barang', ['id' => $item->id]) }}" method="POST">
                         @csrf
                         @method('DELETE')
-                            <button type="submit" name="submit" class="btn btn-danger btn-sm">Delete</button>
+                            <button type="submit" name="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i> Delete</button>
                         </form>
                 </td>
             </tr>

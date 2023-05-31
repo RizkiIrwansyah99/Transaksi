@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="mb-2 d-flex justify-content-end align-items-end ">
-            <a href="{{route('sales.index')}}" class="btn btn-secondary ">Kembali</a>
+            <a href="{{route('sales.index')}}" class="btn btn-secondary "><i class="bi bi-skip-backward-circle"></i> Kembali</a>
         </div>
     </div>
 </div>

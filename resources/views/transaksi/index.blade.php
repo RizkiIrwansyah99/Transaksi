@@ -5,7 +5,7 @@
         <h2>Daftar Transaksi</h2>
     </div>
     <div class="pb-3">
-        <a href='{{route('tambah.transaksi')}}' class="btn btn-primary">Tambah Transaksi</a>
+        <a href='{{route('tambah.transaksi')}}' class="btn btn-primary"><i class="bi bi-plus-circle"></i> Data Transaksi</a>
     </div>
     @if(session('success'))
         <div class="alert alert-success">
@@ -53,14 +53,14 @@
                 <td>{{$item->harga_diskon_formatted}}</td>
                 <td>{{$item->total_formatted}}</td>
                 <td>
-                    <a href="{{route('detail.transaksi', ['id' => $item->id])}}" type="button" class="btn btn-info btn-sm">Detail</a>
+                    <a href="{{route('detail.transaksi', ['id' => $item->id])}}" type="button" class="btn btn-info btn-sm d-block d-sm-inline">Detail</a>
                     <a href="{{route('edit.transaksi', ['id' => $item->id])}}" type="button" class="btn btn-warning 
-                        btn-sm">Edit</a>
+                        btn-sm d-block d-sm-inline"><i class="bi bi-pencil-square"></i> Edit</a>
                     <form onsubmit="return confirm('Yakin akan menghapus data?')" class="d-inline" action="{{route('delete.transaksi', ['id'=>$item->id])}} 
                      " method="POST">
                         @csrf
                         @method('DELETE')
-                            <button type="submit" name="submit" class="btn btn-danger btn-sm">Delete</button>
+                            <button type="submit" name="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash-fill"></i> Delete</button>
                         </form>
                 </td>
             </tr>

@@ -44,14 +44,14 @@
                 <div class="mb-3 row">
                     <label class="col-sm-2 col-form-label">Jumlah</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" name='qty' value="{{ old('qty')}}" id="qty">
+                        <input type="number" class="form-control" name='qty' value="{{ old('qty')}}" id="qty" placeholder="Masukan jumlah barang">
                         <small class="text-danger">{{$errors->first('qty')}}</small>
                     </div>
                 </div>
                 <div class="mb-3 row">
                     <label class="col-sm-2 col-form-label">Diskon (%)</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" name='diskon_pct' value="{{ old('diskon_pct')}}" id="diskon_pct">
+                        <input type="number" class="form-control" name='diskon_pct' value="{{ old('diskon_pct')}}" id="diskon_pct" placeholder="Masukan harga diskon">
                         <small class="text-danger">{{$errors->first('diskon_pct')}}</small>
                     </div>
                 </div>
@@ -79,8 +79,8 @@
                 <div class="mb-3 row">
                     <label class="col-sm-2 col-form-label"></label>
                     <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
-                        <a href="{{route('transaksi.index')}}" class="btn btn-secondary">Kembali</a>
+                        <button type="submit" class="btn btn-primary"><i class="bi bi-box-arrow-down"></i> Simpan</button>
+                        <a href="{{route('transaksi.index')}}" class="btn btn-secondary"><i class="bi bi-skip-backward-circle"></i> Kembali</a>
                     </div>
                 </div>
             </div>

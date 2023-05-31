@@ -43,7 +43,6 @@ Route::put('/update-customer/{id}', [CustomerController::class, 'update'])->name
 Route::get('/detail-customer/{id}', [CustomerController::class, 'show'])->name('detail.customer');
 Route::delete('/customer/{id}', [CustomerController::class, 'destroy'])->name('delete.customer');
 
-
 // Kelola sales
 Route::get('/index-sales', [SalesController::class, 'index'])->name('sales.index');
 Route::get('/tambah-sales', [SalesController::class, 'create'])->name('tambah.sales');

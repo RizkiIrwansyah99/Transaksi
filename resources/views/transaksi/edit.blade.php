@@ -74,8 +74,8 @@
         <div class="mb-3 row">
             <label class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Simpan</button>
-                <a href="{{route('transaksi.index')}}" class="btn btn-secondary">Kembali</a>
+                <button type="submit" class="btn btn-primary"><i class="bi bi-box-arrow-down"></i>Update</button>
+                <a href="{{route('transaksi.index')}}" class="btn btn-secondary"><i class="bi bi-skip-backward-circle"></i> Kembali</a>
             </div>
         </div>
     </div>
